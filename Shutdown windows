@@ -1,0 +1,6 @@
+'''Shutdown Windows'''
+import os
+power = input("do NOT type 'off'")
+#use with care
+if power == "off":
+  os.system('shutdown -s -t 0')
