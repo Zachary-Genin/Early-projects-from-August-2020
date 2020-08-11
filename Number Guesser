@@ -1,0 +1,22 @@
+'''guess the number'''
+import random
+
+numbers = '123456'
+
+def set_password():
+    set_password.password = ''
+    set_password.password = (random.choice(numbers))
+    
+def guess():
+    tries = 0
+    while tries < 6:
+        guess = (input("What is the random number?"))
+        if guess == set_password.password:
+            print("Correct! the random number is " + set_password.password)
+            tries = 6
+        else:
+            print("Try again")
+            tries += 1
+                              
+set_password()
+guess()
